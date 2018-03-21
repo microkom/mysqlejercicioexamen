@@ -17,12 +17,14 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Proveedor prov = new Proveedor();
-        
-        prov.getDBaseData();
+        Empresa google = new Empresa();
         
         File folderName = new File("Proveedores");
-        prov.createFolder(folderName);
+        google.createFolder(folderName);
+        
+        google.createFolderProveedor(folderName);
+        
+        
     }
     
 }
