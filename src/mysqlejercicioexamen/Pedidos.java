@@ -11,26 +11,49 @@ package mysqlejercicioexamen;
  */
 public class Pedidos {
     private int numPedido;
-    private String idCliente;
+    private String nombreCliente;
     private String fecha;
+    private int cantidad;
+    private double precio;
+    private double descuento;
+    private double importe;
 
-    public Pedidos(int numPedido, String idCliente, String fecha) {
+    public Pedidos(int numPedido, String nombreCliente, String fecha, int cantidad, double precio, double descuento, double importe) {
         this.numPedido = numPedido;
-        this.idCliente = idCliente;
+        this.nombreCliente = nombreCliente;
         this.fecha = fecha;
+        this.cantidad = cantidad;
+        this.precio = precio;
+        this.descuento = descuento;
+        this.importe = importe;
     }
 
     public int getNumPedido() {
         return numPedido;
     }
 
-    public String getIdCliente() {
-        return idCliente;
+    public String getNombreCliente() {
+        return nombreCliente;
     }
 
     public String getFecha() {
         return fecha;
     }
-    
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public double getDescuento() {
+        return descuento;
+    }
+
+    public double getImporte() {
+        return importe;
+    }
     
 }
